@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Makenzie's 8th Grade Science Study Guide - Unit 1 Test</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: #2d3748;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      background: white;
+      min-height: 100vh;
+    }
+
+    header {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      padding: 2rem;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    }
+
+    header p {
+      font-size: 1.1rem;
+      opacity: 0.95;
+    }
+
+    .tabs {
+      display: flex;
+      background: #f7fafc;
+      border-bottom: 3px solid #667eea;
+      overflow-x: auto;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .tab {
+      flex: 1;
+      min-width: 150px;
+      padding: 1.2rem 1rem;
+      text-align: center;
+      cursor: pointer;
+      background: #e2e8f0;
+      border: none;
+      font-size: 1rem;
+      font-weight: 600;
+      color: #4a5568;
+      transition: all 0.3s ease;
+      border-right: 1px solid #cbd5e0;
+    }
+
+    .tab:hover {
+      background: #cbd5e0;
+      transform: translateY(-2px);
+    }
+
+    .tab.active {
+      background: white;
+      color: #667eea;
+      border-bottom: 3px solid #667eea;
+      transform: translateY(3px);
+    }
+
+    .tab-content {
+      display: none;
+      padding: 2rem;
+      animation: fadeIn 0.5s;
+    }
+
+    .tab-content.active {
+      display: block;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .section {
+      background: #f8f9fa;
+      border-left: 5px solid #667eea;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+
+    .section h2 {
+      color: #667eea;
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .section h3 {
+      color: #4a5568;
+      font-size: 1.4rem;
+      margin: 1.5rem 0 0.8rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid #e2e8f0;
+    }
+
+    .key-concept {
+      background: #edf2f7;
+      border-left: 4px solid #48bb78;
+      padding: 1rem;
+      margin: 1rem 0;
+      border-radius: 6px;
+    }
+
+    .key-concept strong {
+      color: #2f855a;
+      font-size: 1.1rem;
+    }
+
+    .formula-box {
+      background: linear-gradient(135deg, #fef5e7 0%, #fdebd0 100%);
+      border: 2px solid #f39c12;
+      padding: 1.5rem;
+      margin: 1rem 0;
+      border-radius: 8px;
+      font-family: 'Courier New', monospace;
+      font-size: 1.3rem;
+      text-align: center;
+      font-weight: bold;
+      color: #d68910;
+      box-shadow: 0 3px 6px rgba(243, 156, 18, 0.2);
+    }
+
+    .example-box {
+      background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
+      border-left: 5px solid #4caf50;
+      padding: 1.5rem;
+      margin: 1rem 0;
+      border-radius: 8px;
+    }
+
+    .example-box h4 {
+      color: #2e7d32;
+      margin-bottom: 0.8rem;
+      font-size: 1.2rem;
+    }
+
+    .visual-diagram {
+      text-align: center;
+      margin: 2rem 0;
+      padding: 1rem;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .visual-diagram img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      border: 3px solid #667eea;
+      margin: 1rem 0;
+    }
+
+    .visual-diagram h4 {
+      color: #667eea;
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+      padding: 0.5rem;
+      background: #f7fafc;
+      border-radius: 6px;
+    }
+
+    .practice-section {
+      background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%);
+      padding: 1.5rem;
+      margin: 2rem 0;
+      border-radius: 8px;
+      border: 2px solid #ff9800;
+    }
+
+    .practice-section h3 {
+      color: #e65100;
+      border-bottom: 2px solid #ff9800;
+    }
+
+    .practice-question {
+      background: white;
+      padding: 1rem;
+      margin: 1rem 0;
+      border-radius: 6px;
+      border-left: 4px solid #ff9800;
+    }
+
+    .answer-box {
+      background: #e3f2fd;
+      border-left: 4px solid #2196f3;
+      padding: 1rem;
+      margin-top: 0.5rem;
+      border-radius: 6px;
+      display: none;
+    }
+
+    .answer-box.show {
+      display: block;
+      animation: slideDown 0.3s ease;
+    }
+
+    @keyframes slideDown {
+      from { opacity: 0; max-height: 0; }
+      to { opacity: 1; max-height: 500px; }
+    }
+
+    .btn {
+      background: #667eea;
+      color: white;
+      border: none;
+      padding: 0.8rem 1.5rem;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 1rem;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      margin: 0.5rem 0;
+    }
+
+    .btn:hover {
+      background: #5a67d8;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(102, 126, 234, 0.3);
+    }
+
+    .tip-box {
+      background: linear-gradient(135deg, #e1f5fe 0%, #b3e5fc 100%);
+      border-left: 5px solid #03a9f4;
+      padding: 1rem;
+      margin: 1rem 0;
+      border-radius: 6px;
+    }
+
+    .tip-box::before {
+      content: "💡 Tip for Makenzie: ";
+      font-weight: bold;
+      color: #0277bd;
+    }
+
+    ul, ol {
+      margin-left: 2rem;
+      margin-top: 0.5rem;
+    }
+
+    li {
+      margin: 0.5rem 0;
+      line-height: 1.8;
+    }
+
+    .checklist {
+      list-style: none;
+      margin-left: 0;
+    }
+
+    .checklist li {
+      padding: 0.8rem;
+      background: white;
+      margin: 0.5rem 0;
+      border-radius: 6px;
+      border-left: 4px solid #667eea;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .checklist li:hover {
+      background: #f7fafc;
+      transform: translateX(5px);
+    }
+
+    .checklist input[type="checkbox"] {
+      margin-right: 0.8rem;
+      transform: scale(1.3);
+      cursor: pointer;
+    }
+
+    .checklist li.completed {
+      opacity: 0.6;
+      text-decoration: line-through;
+      background: #e8f5e9;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0;
+      background: white;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    th {
+      background: #667eea;
+      color: white;
+      padding: 1rem;
+      text-align: left;
+      font-weight: 600;
+    }
+
+    td {
+      padding: 1rem;
+      border-bottom: 1px solid #e2e8f0;
+    }
+
+    tr:hover {
+      background: #f7fafc;
+    }
+
+    .progress-bar {
+      width: 100%;
+      height: 30px;
+      background: #e2e8f0;
+      border-radius: 15px;
+      overflow: hidden;
+      margin: 1rem 0;
+    }
+
+    .progress-fill {
+      height: 100%;
+      background: linear-gradient(90deg, #48bb78 0%, #38a169 100%);
+      width: 0%;
+      transition: width 0.5s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: bold;
+    }
+
+    @media print {
+      .tabs, .btn { display: none; }
+      .tab-content { display: block !important; page-break-after: always; }
+      body { background: white; }
+    }
+
+    @media (max-width: 768px) {
+      header h1 { font-size: 1.8rem; }
+      .tab { min-width: 120px; font-size: 0.9rem; padding: 1rem 0.5rem; }
+      .section { padding: 1rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🌟 Makenzie Cornealius 🌟</h1>
+      <p>8th Grade Science Unit 1 Study Guide</p>
+      <p style="font-size: 0.95rem; margin-top: 0.5rem;">TEKS 8.7A, 8.7B, 8.10A, 8.10B, 8.10C, 8.8A | 19 Questions Total</p>
+    </header>
+
+    <div class="tabs">
+      <button class="tab active" onclick="openTab(event, 'overview')">📋 Overview</button>
+      <button class="tab" onclick="openTab(event, 'day1')">📅 Day 1: Forces</button>
+      <button class="tab" onclick="openTab(event, 'day2')">📅 Day 2: Weather</button>
+      <button class="tab" onclick="openTab(event, 'day3')">📅 Day 3: Global Patterns</button>
+      <button class="tab" onclick="openTab(event, 'day4')">📅 Day 4: Waves & Review</button>
+      <button class="tab" onclick="openTab(event, 'formulas')">📐 Quick Reference</button>
+    </div>
+
+    <!-- OVERVIEW TAB -->
+    <div id="overview" class="tab-content active">
+      <div class="section">
+        <h2>👋 Welcome, Makenzie!</h2>
+        <p style="font-size: 1.1rem; line-height: 1.8;">This study guide is designed specifically for YOU to master your Unit 1 test. Follow the 4-day plan, complete each section, and check off your progress. You've got this! 💪</p>
+
+        <div class="progress-bar">
+          <div class="progress-fill" id="overall-progress">0% Complete</div>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>📚 What's on the Test?</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>TEKS Standard</th>
+              <th>Topic</th>
+              <th>Questions</th>
+              <th>Type</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>8.7A</strong></td>
+              <td>Newton's Second Law (F = ma)</td>
+              <td>4</td>
+              <td>Readiness</td>
+            </tr>
+            <tr>
+              <td><strong>8.7B</strong></td>
+              <td>Newton's Three Laws</td>
+              <td>5</td>
+              <td>Readiness</td>
+            </tr>
+            <tr>
+              <td><strong>8.10A</strong></td>
+              <td>Sun, Hydrosphere, Atmosphere</td>
+              <td>4</td>
+              <td>Readiness</td>
+            </tr>
+            <tr>
+              <td><strong>8.10B</strong></td>
+              <td>Global Wind Patterns</td>
+              <td>2</td>
+              <td>Supporting</td>
+            </tr>
+            <tr>
+              <td><strong>8.10C</strong></td>
+              <td>Oceans & Tropical Cyclones</td>
+              <td>2</td>
+              <td>Supporting</td>
+            </tr>
+            <tr>
+              <td><strong>8.8A</strong></td>
+              <td>Waves & EM Spectrum</td>
+              <td>2</td>
+              <td>Supporting</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="tip-box">
+          "Readiness" standards have more questions and are weighted more heavily. Focus extra time on Days 1 and 2!
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>🗓️ Your 4-Day Study Plan</h2>
+        <div class="key-concept">
+          <strong>Goal:</strong> Study 30-40 minutes per day. Take breaks every 15 minutes!
+        </div>
+
+        <ul style="font-size: 1.05rem;">
+          <li><strong>Day 1:</strong> Master Newton's Laws (8.7A & 8.7B) - Forces and motion</li>
+          <li><strong>Day 2:</strong> Understand Weather Systems (8.10A) - Sun, water, and air interactions</li>
+          <li><strong>Day 3:</strong> Learn Global Patterns (8.10B & 8.10C) - Winds, currents, and hurricanes</li>
+          <li><strong>Day 4:</strong> Study Waves (8.8A) + Complete practice test</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>✅ How to Use This Guide</h2>
+        <ol style="font-size: 1.05rem;">
+          <li>Click on each day's tab at the top</li>
+          <li>Read the "Key Concepts" carefully - these are the most important ideas</li>
+          <li>Study the visual diagrams - they help you "see" the science</li>
+          <li>Work through practice problems and check your answers</li>
+          <li>Check off completed items in your checklist</li>
+          <li>Review the "Quick Reference" tab before the test</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Continue with rest of content... -->
+    <script>
+      function openTab(evt, tabId) {
+        const tabs = document.querySelectorAll('.tab');
+        const contents = document.querySelectorAll('.tab-content');
+        tabs.forEach(t => t.classList.remove('active'));
+        contents.forEach(c => c.classList.remove('active'));
+        document.getElementById(tabId).classList.add('active');
+        evt.currentTarget.classList.add('active');
+      }
+
+      function toggleAnswer(id) {
+        const el = document.getElementById(id);
+        el.classList.toggle('show');
+      }
+
+      function updateProgress() {
+        const checkboxes = document.querySelectorAll('.checklist input[type="checkbox"]');
+        let done = 0;
+        checkboxes.forEach(cb => {
+          const li = cb.closest('li');
+          if (cb.checked) { done++; li.classList.add('completed'); } else { li.classList.remove('completed'); }
+        });
+        const percent = Math.round((done / checkboxes.length) * 100) || 0;
+        const bar = document.getElementById('overall-progress');
+        bar.style.width = percent + '%';
+        bar.textContent = percent + '% Complete';
+      }
+
+      // Initialize progress on load
+      document.addEventListener('DOMContentLoaded', updateProgress);
+    </script>
+  </div>
+</body>
+</html>
