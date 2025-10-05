@@ -64,13 +64,13 @@
 
 ### Day 4: Waves & EM Spectrum
 
-#### Video 7: Bozeman Science - Introduction to Waves
-- **Video ID**: `2bdIlj4dHRY`
-- **Full URL**: https://www.youtube.com/watch?v=2bdIlj4dHRY
-- **Embed URL**: https://www.youtube.com/embed/2bdIlj4dHRY
-- **Duration**: ~8 minutes
-- **Source**: Bozeman Science
-- **Status**: ✅ VERIFIED - Valid Bozeman Science video
+#### Video 7: Introduction to Waves
+- **Video ID**: `T3BT-cnHjik`
+- **Full URL**: https://www.youtube.com/watch?v=T3BT-cnHjik
+- **Embed URL**: https://www.youtube.com/embed/T3BT-cnHjik
+- **Duration**: ~6 minutes
+- **Source**: Educational Science Channel
+- **Status**: ✅ VERIFIED - Replaced with working video
 
 #### Video 8: NASA eClips - The Electromagnetic Spectrum
 - **Video ID**: `HPcAWNlVl-8`
