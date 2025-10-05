@@ -1,0 +1,20 @@
+{
+  "name": "makenzie-science-study-guide",
+  "version": "1.0.0",
+  "description": "Interactive 8th Grade Science Study Guide for Unit 1 Test",
+  "main": "index.html",
+  "scripts": {
+    "dev": "vercel dev",
+    "build": "echo 'Static site - no build needed'",
+    "start": "echo 'Static site - serving index.html'"
+  },
+  "keywords": [
+    "education",
+    "science",
+    "study-guide",
+    "8th-grade",
+    "teks"
+  ],
+  "author": "Makenzie Cornealius",
+  "license": "MIT"
+}
