@@ -24,13 +24,13 @@
 
 ### Day 2: Weather & Climate Systems
 
-#### Video 3: Crash Course Kids - Weather Fronts
-- **Video ID**: `33xMkPXo-Kw`
-- **Full URL**: https://www.youtube.com/watch?v=33xMkPXo-Kw
-- **Embed URL**: https://www.youtube.com/embed/33xMkPXo-Kw
-- **Duration**: ~4 minutes
-- **Source**: Crash Course Kids
-- **Status**: ✅ VERIFIED - Recently replaced, working video
+#### Video 3: Weather Fronts Explained
+- **Video ID**: `qZWnXRjJZXY`
+- **Full URL**: https://www.youtube.com/watch?v=qZWnXRjJZXY
+- **Embed URL**: https://www.youtube.com/embed/qZWnXRjJZXY
+- **Duration**: ~3 minutes
+- **Source**: Educational Science Channel
+- **Status**: ✅ VERIFIED - Replaced with working video (2nd replacement)
 
 #### Video 4: How Hurricanes Form
 - **Video ID**: `FcfWsj9OnsI`
