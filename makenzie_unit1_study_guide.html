@@ -473,7 +473,927 @@
       </div>
     </div>
 
-    <!-- Continue with rest of content... -->
+    <!-- DAY 1 TAB -->
+    <div id="day1" class="tab-content">
+      <div class="section">
+        <h2>📅 Day 1: Forces & Newton's Laws</h2>
+        <p><strong>Time:</strong> 35-40 minutes | <strong>Standards:</strong> TEKS 8.7A & 8.7B (9 questions total)</p>
+
+        <h3>✅ Today's Checklist</h3>
+        <ul class="checklist">
+          <li><input type="checkbox" onchange="updateProgress()"/> Read all Key Concepts for 8.7A</li>
+          <li><input type="checkbox" onchange="updateProgress()"/> Study Newton's 2nd Law diagram</li>
+          <li><input type="checkbox" onchange="updateProgress()"/> Complete 8.7A practice problems</li>
+          <li><input type="checkbox" onchange="updateProgress()"/> Read all Key Concepts for 8.7B</li>
+          <li><input type="checkbox" onchange="updateProgress()"/> Study Newton's 3rd Law diagram</li>
+          <li><input type="checkbox" onchange="updateProgress()"/> Complete 8.7B practice problems</li>
+        </ul>
+      </div>
+
+      <!-- 8.7A Section -->
+      <div class="section">
+        <h2>🔬 TEKS 8.7A: Newton's Second Law</h2>
+        <p style="font-size: 1.05rem;"><strong>What you'll learn:</strong> How to calculate and analyze acceleration based on net force and mass</p>
+
+        <div class="formula-box">
+          F = m × a
+          <div style="font-size: 0.9rem; margin-top: 0.5rem; color: #7f8c8d;">
+            Force = mass × acceleration
+          </div>
+        </div>
+
+        <h3>🎯 Key Concepts</h3>
+
+        <div class="key-concept">
+          <strong>1. Net Force:</strong> The sum of all forces acting on an object, taking direction into account. Forces in the same direction add together; forces in opposite directions subtract.
+        </div>
+
+        <div class="example-box">
+          <h4>Example:</h4>
+          <p>A box has 50 N pushing right and 20 N friction pushing left.</p>
+          <p><strong>Net Force = 50 N - 20 N = 30 N to the right</strong></p>
+        </div>
+
+        <div class="key-concept">
+          <strong>2. The Relationship:</strong> Acceleration is directly proportional to force and inversely proportional to mass.
+          <ul>
+            <li>More force → More acceleration</li>
+            <li>More mass → Less acceleration</li>
+            <li>Acceleration points in the same direction as net force</li>
+          </ul>
+        </div>
+
+        <div class="key-concept">
+          <strong>3. Rearranging the Formula:</strong>
+          <ul>
+            <li>To find acceleration: <strong>a = F ÷ m</strong></li>
+            <li>To find force: <strong>F = m × a</strong></li>
+            <li>To find mass: <strong>m = F ÷ a</strong></li>
+          </ul>
+        </div>
+
+        <div class="key-concept">
+          <strong>4. Units:</strong>
+          <ul>
+            <li>Force: Newtons (N)</li>
+            <li>Mass: kilograms (kg)</li>
+            <li>Acceleration: meters per second squared (m/s²)</li>
+          </ul>
+        </div>
+
+        <div class="visual-diagram">
+          <h4>🎨 Visual: Forces Acting on a Box</h4>
+          <img src="https://cdn.abacus.ai/images/db210960-44fc-4d32-8df9-4c5b04989c6d.png" alt="Newton's Second Law - Box with forces"/>
+          <p style="margin-top: 1rem; color: #4a5568;"><strong>What you see:</strong> Applied force (40 N right) minus friction (15 N left) = Net force (25 N right). This net force causes acceleration to the right.</p>
+        </div>
+
+        <div class="tip-box">
+          When solving problems, always find the NET FORCE first by adding/subtracting all forces. Then use F = ma!
+        </div>
+
+        <div class="practice-section">
+          <h3>📝 Practice Problems - 8.7A</h3>
+
+          <div class="practice-question">
+            <strong>Problem 1:</strong> A 1,200 kg car has an engine force of 3,600 N forward and air resistance of 1,200 N backward. Calculate the acceleration.
+            <button class="btn" onclick="toggleAnswer('ans1a')">Show Answer</button>
+            <div class="answer-box" id="ans1a">
+              <strong>Step 1:</strong> Find net force<br/>
+              F_net = 3,600 N - 1,200 N = 2,400 N forward<br/><br/>
+              <strong>Step 2:</strong> Use F = ma, solve for a<br/>
+              a = F ÷ m = 2,400 N ÷ 1,200 kg = <strong>2.0 m/s² forward</strong>
+            </div>
+          </div>
+
+          <div class="practice-question">
+            <strong>Problem 2:</strong> A 15 kg sled has a pulling force of 45 N forward and friction of 12 N backward. Find the acceleration.
+            <button class="btn" onclick="toggleAnswer('ans2a')">Show Answer</button>
+            <div class="answer-box" id="ans2a">
+              <strong>Step 1:</strong> Net force = 45 N - 12 N = 33 N forward<br/>
+              <strong>Step 2:</strong> a = 33 N ÷ 15 kg = <strong>2.2 m/s² forward</strong>
+            </div>
+          </div>
+
+          <div class="practice-question">
+            <strong>Problem 3:</strong> If the net force on an object doubles but mass stays the same, what happens to acceleration?
+            <button class="btn" onclick="toggleAnswer('ans3a')">Show Answer</button>
+            <div class="answer-box" id="ans3a">
+              <strong>Answer:</strong> Acceleration doubles.<br/>
+              <strong>Why:</strong> Since a = F/m, if F doubles and m stays the same, then a must double. They are directly proportional.
+            </div>
+          </div>
+
+          <div class="practice-question">
+            <strong>Problem 4:</strong> If mass doubles but net force stays the same, what happens to acceleration?
+            <button class="btn" onclick="toggleAnswer('ans4a')">Show Answer</button>
+            <div class="answer-box" id="ans4a">
+              <strong>Answer:</strong> Acceleration is cut in half (halves).<br/>
+              <strong>Why:</strong> Since a = F/m, if m doubles and F stays the same, then a is divided by 2. They are inversely proportional.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 8.7B Section -->
+      <div class="section">
+        <h2>🔬 TEKS 8.7B: Newton's Three Laws of Motion</h2>
+        <p style="font-size: 1.05rem;"><strong>What you'll learn:</strong> How Newton's three laws work together in real-world systems</p>
+
+        <h3>🎯 Key Concepts</h3>
+
+        <div class="key-concept">
+          <strong>Newton's First Law (Law of Inertia):</strong>
+          <p>An object at rest stays at rest, and an object in motion stays in motion at constant velocity, UNLESS acted upon by an unbalanced (net) force.</p>
+          <ul>
+            <li><strong>Inertia:</strong> The tendency of objects to resist changes in motion</li>
+            <li>More mass = more inertia = harder to start or stop</li>
+            <li><strong>Real-world example:</strong> Seatbelts! When a car stops suddenly, your body keeps moving forward (inertia) until the seatbelt applies a force to stop you.</li>
+          </ul>
+        </div>
+
+        <div class="key-concept">
+          <strong>Newton's Second Law (F = ma):</strong>
+          <p>The acceleration of an object depends on the net force acting on it and its mass.</p>
+          <ul>
+            <li>This is what you learned in 8.7A!</li>
+            <li><strong>Real-world example:</strong> It takes more force to accelerate a loaded truck than an empty one at the same rate.</li>
+          </ul>
+        </div>
+
+        <div class="key-concept">
+          <strong>Newton's Third Law (Action-Reaction):</strong>
+          <p>For every action force, there is an equal and opposite reaction force.</p>
+          <ul>
+            <li>Forces always come in pairs</li>
+            <li>The forces are equal in size but opposite in direction</li>
+            <li>The forces act on DIFFERENT objects</li>
+            <li><strong>Real-world example:</strong> When you push on the ground backward (action), the ground pushes you forward (reaction) - that's how you walk!</li>
+          </ul>
+        </div>
+
+        <div class="visual-diagram">
+          <h4>🎨 Visual: Action-Reaction Forces</h4>
+          <img src="https://cdn.abacus.ai/images/86bdcfd7-d314-4f04-898b-bff5e5afa9d9.png" alt="Newton's Third Law - Skateboard"/>
+          <p style="margin-top: 1rem; color: #4a5568;"><strong>What you see:</strong> Person pushes ground backward (action) → Ground pushes person forward (reaction). Equal forces, opposite directions, different objects!</p>
+        </div>
+
+        <div class="tip-box">
+          To identify which law: Look for keywords! "Stays at rest" or "keeps moving" = 1st Law. "Calculate acceleration" = 2nd Law. "Equal and opposite" or "pairs" = 3rd Law.
+        </div>
+
+        <div class="practice-section">
+          <h3>📝 Practice Problems - 8.7B</h3>
+
+          <div class="practice-question">
+            <strong>Problem 1:</strong> You're on a skateboard and push the ground backward. You move forward. Which law explains this?
+            <button class="btn" onclick="toggleAnswer('ans1b')">Show Answer</button>
+            <div class="answer-box" id="ans1b">
+              <strong>Answer:</strong> Newton's Third Law (Action-Reaction)<br/>
+              <strong>Explanation:</strong> You push ground backward (action) → Ground pushes you forward (reaction). These are equal and opposite forces on different objects.
+            </div>
+          </div>
+
+          <div class="practice-question">
+            <strong>Problem 2:</strong> Why does a heavier football player need more force to achieve the same acceleration as a lighter player?
+            <button class="btn" onclick="toggleAnswer('ans2b')">Show Answer</button>
+            <div class="answer-box" id="ans2b">
+              <strong>Answer:</strong> Newton's Second Law (F = ma)<br/>
+              <strong>Explanation:</strong> Since a = F/m, if mass (m) is bigger, you need a bigger force (F) to get the same acceleration (a). More mass requires more force.
+            </div>
+          </div>
+
+          <div class="practice-question">
+            <strong>Problem 3:</strong> A book sits on a table. Why doesn't it fall through the table?
+            <button class="btn" onclick="toggleAnswer('ans3b')">Show Answer</button>
+            <div class="answer-box" id="ans3b">
+              <strong>Answer:</strong> Newton's Third Law<br/>
+              <strong>Explanation:</strong> The book pushes down on the table (action) with its weight. The table pushes up on the book (reaction) with an equal force. These balanced forces keep the book at rest.
+            </div>
+          </div>
+
+          <div class="practice-question">
+            <strong>Problem 4:</strong> You're in a car that suddenly brakes. You lurch forward. Which law explains this?
+            <button class="btn" onclick="toggleAnswer('ans4b')">Show Answer</button>
+            <div class="answer-box" id="ans4b">
+              <strong>Answer:</strong> Newton's First Law (Inertia)<br/>
+              <strong>Explanation:</strong> Your body was in motion with the car. When the car stops (force applied to car), your body wants to keep moving forward at constant velocity until the seatbelt applies a force to stop you.
+            </div>
+          </div>
+
+          <div class="practice-question">
+            <strong>Problem 5:</strong> A rocket accelerates upward during launch. When does this happen?
+            <button class="btn" onclick="toggleAnswer('ans5b')">Show Answer</button>
+            <div class="answer-box" id="ans5b">
+              <strong>Answer:</strong> When the upward thrust force is greater than the downward forces (weight + air resistance).<br/>
+              <strong>Explanation:</strong> Newton's Second Law - there must be a net upward force to create upward acceleration. Thrust > (Weight + Drag) = Net force up = Acceleration up.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>🎯 Day 1 Summary</h2>
+        <div class="key-concept">
+          <strong>What you mastered today:</strong>
+          <ul>
+            <li>✅ How to calculate acceleration using F = ma</li>
+            <li>✅ The relationship between force, mass, and acceleration</li>
+            <li>✅ Newton's First Law (Inertia) - objects resist changes in motion</li>
+            <li>✅ Newton's Second Law (F = ma) - force causes acceleration</li>
+            <li>✅ Newton's Third Law (Action-Reaction) - forces come in pairs</li>
+          </ul>
+        </div>
+        <div class="tip-box">
+          Before moving to Day 2, make sure you can solve F = ma problems and identify which of Newton's laws applies to different situations!
+        </div>
+      </div>
+    </div>
+
+    <!-- DAY 2 TAB -->
+    <div id="day2" class="tab-content">
+      <div class="section">
+        <h2>📅 Day 2: Weather & Climate Systems</h2>
+        <p><strong>Time:</strong> 35-40 minutes | <strong>Standard:</strong> TEKS 8.10A (4 questions)</p>
+
+        <h3>✅ Today's Checklist</h3>
+        <ul class="checklist">
+          <li><input type="checkbox" onchange="updateProgress()"/> Read all Key Concepts for 8.10A</li>
+          <li><input type="checkbox" onchange="updateProgress()"/> Study convection diagram (sea/land breeze)</li>
+          <li><input type="checkbox" onchange="updateProgress()"/> Study weather fronts diagram</li>
+          <li><input type="checkbox" onchange="updateProgress()"/> Complete practice problems</li>
+          <li><input type="checkbox" onchange="updateProgress()"/> Review pressure systems</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>🔬 TEKS 8.10A: Sun, Hydrosphere, & Atmosphere</h2>
+        <p style="font-size: 1.05rem;"><strong>What you'll learn:</strong> How energy from the Sun interacts with water and air to create weather and climate</p>
+
+        <h3>🎯 Key Concepts</h3>
+
+        <div class="key-concept">
+          <strong>1. The Sun is the Energy Source:</strong>
+          <p>The Sun provides energy that drives ALL weather and climate on Earth through uneven heating.</p>
+          <ul>
+            <li>Equator receives more direct sunlight → warmer</li>
+            <li>Poles receive less direct sunlight → colder</li>
+            <li>This temperature difference drives wind and ocean currents</li>
+          </ul>
+        </div>
+
+        <div class="key-concept">
+          <strong>2. The Water Cycle Connection:</strong>
+          <p>The Sun's energy powers the water cycle, which links the hydrosphere (water) and atmosphere (air).</p>
+          <ul>
+            <li><strong>Evaporation:</strong> Sun heats water → water vapor rises into atmosphere</li>
+            <li><strong>Condensation:</strong> Water vapor cools → forms clouds</li>
+            <li><strong>Precipitation:</strong> Water falls back to Earth as rain, snow, sleet, or hail</li>
+          </ul>
+        </div>
+
+        <div class="key-concept">
+          <strong>3. Convection - How Heat Moves:</strong>
+          <p>Convection is the transfer of heat through the movement of fluids (liquids and gases).</p>
+          <ul>
+            <li>Warm air/water is less dense → rises</li>
+            <li>Cool air/water is more dense → sinks</li>
+            <li>This creates a circular motion called a convection current</li>
+            <li><strong>Example:</strong> Sea breeze during the day, land breeze at night</li>
+          </ul>
+        </div>
+
+        <div class="visual-diagram">
+          <h4>🎨 Visual: Sea Breeze & Land Breeze</h4>
+          <img src="https://cdn.abacus.ai/images/9bfc8930-427c-446f-9ca4-cd8cbe27d37c.png" alt="Sea and Land Breeze"/>
+          <p style="margin-top: 1rem; color: #4a5568;">
+            <strong>Daytime (Sea Breeze):</strong> Land heats faster than water → warm air rises over land → cool air from ocean moves in to replace it.<br/>
+            <strong>Nighttime (Land Breeze):</strong> Land cools faster than water → warm air rises over ocean → cool air from land moves toward ocean.
+          </p>
+        </div>
+
+        <div class="key-concept">
+          <strong>4. Weather vs. Climate:</strong>
+          <ul>
+            <li><strong>Weather:</strong> Day-to-day conditions (temperature, precipitation, wind, clouds) in a specific place</li>
+            <li><strong>Climate:</strong> Average weather patterns over 30+ years in a region</li>
+            <li><strong>Example:</strong> "It's raining today" = weather. "Seattle is rainy" = climate.</li>
+          </ul>
+        </div>
+
+        <div class="key-concept">
+          <strong>5. Pressure Systems:</strong>
+          <table>
+            <thead>
+              <tr>
+                <th>System</th>
+                <th>Air Movement</th>
+                <th>Weather</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>High Pressure (H)</strong></td>
+                <td>Air sinks downward</td>
+                <td>Clear, sunny, dry</td>
+              </tr>
+              <tr>
+                <td><strong>Low Pressure (L)</strong></td>
+                <td>Air rises upward</td>
+                <td>Cloudy, rainy, stormy</td>
+              </tr>
+            </tbody>
+          </table>
+          <p><strong>Why?</strong> Rising air cools → condensation → clouds/rain. Sinking air warms → evaporation → clear skies.</p>
+        </div>
+
+        <div class="key-concept">
+          <strong>6. Weather Fronts:</strong>
+          <p>A front is the boundary between two different air masses.</p>
+          <ul>
+            <li><strong>Cold Front:</strong> Cold air pushes under warm air → tall clouds → heavy storms → cooler after</li>
+            <li><strong>Warm Front:</strong> Warm air slides over cold air → layered clouds → steady light rain → warmer after</li>
+            <li><strong>Stationary Front:</strong> Neither air mass moves → clouds linger for days</li>
+            <li><strong>Occluded Front:</strong> Cold front catches up to warm front → complex weather</li>
+          </ul>
+        </div>
+
+        <div class="visual-diagram">
+          <h4>🎨 Visual: Four Types of Weather Fronts</h4>
+          <img src="https://cdn.abacus.ai/images/d7e9ccb9-1dea-41f5-bb7f-45a3811ef192.png" alt="Weather Fronts"/>
+          <p style="margin-top: 1rem; color: #4a5568;">
+            <strong>Cold Front (blue triangles):</strong> Fast-moving, heavy storms<br/>
+            <strong>Warm Front (red semicircles):</strong> Slow-moving, steady rain<br/>
+            <strong>Stationary Front (alternating):</strong> Boundary doesn't move<br/>
+            <strong>Occluded Front (purple):</strong> Cold catches warm
+          </p>
+        </div>
+
+        <div class="key-concept">
+          <strong>7. Oceans Moderate Climate:</strong>
+          <ul>
+            <li>Water has high specific heat → heats/cools slowly</li>
+            <li>Coastal areas have milder temperatures than inland areas</li>
+            <li>Ocean currents transport heat around the planet</li>
+          </ul>
+        </div>
+
+        <div class="tip-box">
+          Remember: Low pressure = rising air = clouds and rain. High pressure = sinking air = clear and dry. This is a common test question!
+        </div>
+
+        <div class="practice-section">
+          <h3>📝 Practice Problems - 8.10A</h3>
+
+          <div class="practice-question">
+            <strong>Problem 1:</strong> Why are coastal cities like San Francisco milder in temperature than inland cities at the same latitude?
+            <button class="btn" onclick="toggleAnswer('ans1c')">Show Answer</button>
+            <div class="answer-box" id="ans1c">
+              <strong>Answer:</strong> Water has high specific heat capacity and heats/cools slowly. Ocean currents also transport heat. This moderates (makes milder) the temperature of coastal areas compared to inland areas that heat and cool more quickly.
+            </div>
+          </div>
+
+          <div class="practice-question">
+            <strong>Problem 2:</strong> Which pressure system usually brings rain and why?
+            <button class="btn" onclick="toggleAnswer('ans2c')">Show Answer</button>
+            <div class="answer-box" id="ans2c">
+              <strong>Answer:</strong> Low pressure systems bring rain.<br/>
+              <strong>Why:</strong> In low pressure, air rises. As air rises, it cools. Cool air can't hold as much moisture, so water vapor condenses into clouds and precipitation forms.
+            </div>
+          </div>
+
+          <div class="practice-question">
+            <strong>Problem 3:</strong> Name two steps of the water cycle that are powered by the Sun's energy.
+            <button class="btn" onclick="toggleAnswer('ans3c')">Show Answer</button>
+            <div class="answer-box" id="ans3c">
+              <strong>Answer:</strong>
+              <ol>
+                <li><strong>Evaporation:</strong> Sun heats water, turning liquid water into water vapor</li>
+                <li><strong>Transpiration:</strong> Sun causes plants to release water vapor</li>
+              </ol>
+              <p>(The Sun also drives convection currents that move water vapor through the atmosphere)</p>
+            </div>
+          </div>
+
+          <div class="practice-question">
+            <strong>Problem 4:</strong> Explain how the Sun, ocean, and atmosphere interact to create a hurricane.
+            <button class="btn" onclick="toggleAnswer('ans4c')">Show Answer</button>
+            <div class="answer-box" id="ans4c">
+              <strong>Answer:</strong>
+              <ol>
+                <li>Sun heats ocean water (≥26-27°C)</li>
+                <li>Warm ocean water evaporates → moist air rises (hydrosphere → atmosphere)</li>
+                <li>As moist air rises and cools, water vapor condenses → releases heat energy</li>
+                <li>This heat powers the storm, causing more air to rise</li>
+                <li>Earth's rotation organizes the system into a spinning storm</li>
+                <li>The cycle continues as long as warm ocean water provides energy</li>
+              </ol>
+            </div>
+          </div>
+
+          <div class="practice-question">
+            <strong>Problem 5:</strong> Why are deserts often located under persistent high-pressure systems?
+            <button class="btn" onclick="toggleAnswer('ans5c')">Show Answer</button>
+            <div class="answer-box" id="ans5c">
+              <strong>Answer:</strong> In high pressure systems, air sinks downward. As air sinks, it warms up and becomes drier (can hold more moisture). This prevents cloud formation and precipitation, creating dry desert conditions.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>🎯 Day 2 Summary</h2>
+        <div class="key-concept">
+          <strong>What you mastered today:</strong>
+          <ul>
+            <li>✅ The Sun provides energy that drives weather and climate</li>
+            <li>✅ How convection transfers heat in air and water</li>
+            <li>✅ The water cycle connects hydrosphere and atmosphere</li>
+            <li>✅ High pressure = clear/dry; Low pressure = cloudy/rainy</li>
+            <li>✅ Four types of weather fronts and their characteristics</li>
+            <li>✅ Oceans moderate coastal climates</li>
+          </ul>
+        </div>
+        <div class="tip-box">
+          Make sure you can explain how the Sun, water, and air work together! This is a key concept for the test.
+        </div>
+      </div>
+    </div>
+
+    <!-- DAY 3 TAB -->
+    <div id="day3" class="tab-content">
+      <div class="section">
+        <h2>📅 Day 3: Global Patterns & Tropical Cyclones</h2>
+        <p><strong>Time:</strong> 30-35 minutes | <strong>Standards:</strong> TEKS 8.10B & 8.10C (4 questions)</p>
+
+        <h3>✅ Today's Checklist</h3>
+        <ul class="checklist">
+          <li><input type="checkbox" onchange="updateProgress()"/> Read all Key Concepts for 8.10B</li>
+          <li><input type="checkbox" onchange="updateProgress()"/> Study global wind belts diagram</li>
+          <li><input type="checkbox" onchange="updateProgress()"/> Complete 8.10B practice problems</li>
+          <li><input type="checkbox" onchange="updateProgress()"/> Read all Key Concepts for 8.10C</li>
+          <li><input type="checkbox" onchange="updateProgress()"/> Study hurricane structure diagram</li>
+          <li><input type="checkbox" onchange="updateProgress()"/> Complete 8.10C practice problems</li>
+        </ul>
+      </div>
+
+      <!-- 8.10B Section -->
+      <div class="section">
+        <h2>🔬 TEKS 8.10B: Global Atmospheric Patterns</h2>
+        <p style="font-size: 1.05rem;"><strong>What you'll learn:</strong> How global wind patterns form and influence local weather</p>
+
+        <h3>🎯 Key Concepts</h3>
+
+        <div class="key-concept">
+          <strong>1. Global Wind Belts:</strong>
+          <p>Earth has three major wind belts in each hemisphere caused by uneven heating and Earth's rotation.</p>
+          <table>
+            <thead>
+              <tr>
+                <th>Wind Belt</th>
+                <th>Latitude</th>
+                <th>Direction</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Trade Winds</strong></td>
+                <td>0° - 30°</td>
+                <td>East to West</td>
+              </tr>
+              <tr>
+                <td><strong>Westerlies</strong></td>
+                <td>30° - 60°</td>
+                <td>West to East</td>
+              </tr>
+              <tr>
+                <td><strong>Polar Easterlies</strong></td>
+                <td>60° - 90°</td>
+                <td>East to West</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="visual-diagram">
+          <h4>🎨 Visual: Global Wind Belts (Northern Hemisphere)</h4>
+          <img src="https://cdn.abacus.ai/images/96da59e8-46ef-4d8e-8404-12121a6f1f8d.png" alt="Global Wind Belts"/>
+          <p style="margin-top: 1rem; color: #4a5568;">
+            <strong>Trade Winds (0-30°N):</strong> Blow from northeast to southwest<br/>
+            <strong>Westerlies (30-60°N):</strong> Blow from southwest to northeast - THIS IS WHERE THE U.S. IS!<br/>
+            <strong>Polar Easterlies (60-90°N):</strong> Blow from northeast to southwest
+          </p>
+        </div>
+
+        <div class="key-concept">
+          <strong>2. The Coriolis Effect:</strong>
+          <p>Earth's rotation causes moving air and water to curve rather than travel in straight lines.</p>
+          <ul>
+            <li><strong>Northern Hemisphere:</strong> Wind curves to the RIGHT</li>
+            <li><strong>Southern Hemisphere:</strong> Wind curves to the LEFT</li>
+            <li>This is why wind belts don't blow straight north-south</li>
+          </ul>
+        </div>
+
+        <div class="key-concept">
+          <strong>3. Jet Streams:</strong>
+          <p>Fast-moving rivers of air high in the atmosphere (about 10 km up) that steer weather systems.</p>
+          <ul>
+            <li>Flow from west to east in mid-latitudes</li>
+            <li>Separate cold polar air from warm tropical air</li>
+            <li>When jet stream dips south → cold air invades</li>
+            <li>When jet stream moves north → warm air moves in</li>
+            <li>Weather systems generally move with the jet stream</li>
+          </ul>
+        </div>
+
+        <div class="key-concept">
+          <strong>4. U.S. Weather Patterns:</strong>
+          <ul>
+            <li>The U.S. is located in the <strong>Westerlies</strong> wind belt (30-60°N)</li>
+            <li>Weather systems generally move from <strong>west to east</strong></li>
+            <li>The jet stream steers storms across the country</li>
+          </ul>
+        </div>
+
+        <div class="tip-box">
+          Remember: The U.S. is in the Westerlies, so weather moves WEST → EAST. That's why meteorologists look at weather in California to predict weather in Texas!
+        </div>
+
+        <div class="practice-section">
+          <h3>📝 Practice Problems - 8.10B</h3>
+
+          <div class="practice-question">
+            <strong>Problem 1:</strong> Which wind belt controls most U.S. weather, and what direction do weather systems typically move?
+            <button class="btn" onclick="toggleAnswer('ans1d')">Show Answer</button>
+            <div class="answer-box" id="ans1d">
+              <strong>Answer:</strong> The Westerlies (30-60°N latitude) control U.S. weather. Weather systems generally move from <strong>west to east</strong> across the United States because the Westerlies blow from west to east.
+            </div>
+          </div>
+
+          <div class="practice-question">
+            <strong>Problem 2:</strong> How does the jet stream affect local weather?
+            <button class="btn" onclick="toggleAnswer('ans2d')">Show Answer</button>
+            <div class="answer-box" id="ans2d">
+              <strong>Answer:</strong> The jet stream:
+              <ul>
+                <li>Steers weather systems and storms across regions</li>
+                <li>Separates cold polar air from warm tropical air</li>
+                <li>When it dips south, it brings cold air and storms</li>
+                <li>When it moves north, warmer air moves in</li>
+                <li>Acts like a "highway" for weather systems</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 8.10C Section -->
+      <div class="section">
+        <h2>🔬 TEKS 8.10C: Oceans, Air Masses, & Tropical Cyclones</h2>
+        <p style="font-size: 1.05rem;"><strong>What you'll learn:</strong> How oceans and air masses interact to create hurricanes</p>
+
+        <h3>🎯 Key Concepts</h3>
+
+        <div class="key-concept">
+          <strong>1. Air Masses:</strong>
+          <p>Large bodies of air with similar temperature and humidity throughout.</p>
+          <table>
+            <thead>
+              <tr>
+                <th>Type</th>
+                <th>Characteristics</th>
+                <th>Where Forms</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>mT</strong> (maritime Tropical)</td>
+                <td>Warm & humid</td>
+                <td>Over warm oceans</td>
+              </tr>
+              <tr>
+                <td><strong>cP</strong> (continental Polar)</td>
+                <td>Cold & dry</td>
+                <td>Over cold land</td>
+              </tr>
+              <tr>
+                <td><strong>mP</strong> (maritime Polar)</td>
+                <td>Cold & humid</td>
+                <td>Over cold oceans</td>
+              </tr>
+              <tr>
+                <td><strong>cT</strong> (continental Tropical)</td>
+                <td>Warm & dry</td>
+                <td>Over warm land (deserts)</td>
+              </tr>
+            </tbody>
+          </table>
+          <p><strong>Tip:</strong> "m" = maritime (wet), "c" = continental (dry), "T" = tropical (warm), "P" = polar (cold)</p>
+        </div>
+
+        <div class="key-concept">
+          <strong>2. Ocean Currents:</strong>
+          <ul>
+            <li>Surface currents are driven by global winds</li>
+            <li>Currents transport heat around the planet</li>
+            <li><strong>Example:</strong> Gulf Stream carries warm water from tropics to Europe, making Europe warmer than it would otherwise be</li>
+          </ul>
+        </div>
+
+        <div class="key-concept">
+          <strong>3. Hurricane Formation (Tropical Cyclones):</strong>
+          <p>Hurricanes need specific conditions to form and strengthen:</p>
+          <ul>
+            <li><strong>Warm ocean water:</strong> At least 26-27°C (about 80°F) to provide energy</li>
+            <li><strong>Moist air:</strong> Evaporation from warm ocean provides water vapor</li>
+            <li><strong>Low wind shear:</strong> Winds at different altitudes must be similar so storm isn't torn apart</li>
+            <li><strong>Coriolis effect:</strong> Earth's rotation organizes the storm into a spinning system</li>
+            <li><strong>Distance from equator:</strong> At least 5° latitude (Coriolis effect too weak at equator)</li>
+          </ul>
+        </div>
+
+        <div class="visual-diagram">
+          <h4>🎨 Visual: Hurricane Structure</h4>
+          <img src="https://cdn.abacus.ai/images/e04a3735-ac41-4ccb-a581-43707020a688.png" alt="Hurricane Structure"/>
+          <p style="margin-top: 1rem; color: #4a5568;">
+            <strong>Eye:</strong> Calm center with low pressure and clear skies<br/>
+            <strong>Eyewall:</strong> Ring of strongest winds and heaviest rain around the eye<br/>
+            <strong>Rainbands:</strong> Spiral bands of clouds and rain extending outward<br/>
+            <strong>Warm Ocean (≥27°C):</strong> Provides energy through evaporation and heat release during condensation
+          </p>
+        </div>
+
+        <div class="key-concept">
+          <strong>4. Why Hurricanes Weaken:</strong>
+          <ul>
+            <li><strong>Move over land:</strong> Lose warm ocean water energy source</li>
+            <li><strong>Move over cold water:</strong> Not enough heat energy to sustain the storm</li>
+            <li><strong>Friction with land:</strong> Terrain disrupts organized circulation</li>
+            <li><strong>Dry air mixes in:</strong> Reduces moisture needed for condensation</li>
+            <li><strong>Increased wind shear:</strong> Tears the storm apart</li>
+          </ul>
+        </div>
+
+        <div class="key-concept">
+          <strong>5. Hurricane Season:</strong>
+          <ul>
+            <li>Peak season: August - October (late summer/early fall)</li>
+            <li><strong>Why?</strong> Ocean temperatures are warmest after summer heating</li>
+            <li>Wind shear is typically lower during this time</li>
+          </ul>
+        </div>
+
+        <div class="tip-box">
+          Key hurricane fact: Warm water (≥27°C) is the FUEL. When hurricanes move over land or cold water, they weaken because they lose their energy source!
+        </div>
+
+        <div class="practice-section">
+          <h3>📝 Practice Problems - 8.10C</h3>
+
+          <div class="practice-question">
+            <strong>Problem 1:</strong> Why do many hurricanes form in late summer (August-October)?
+            <button class="btn" onclick="toggleAnswer('ans1e')">Show Answer</button>
+            <div class="answer-box" id="ans1e">
+              <strong>Answer:</strong>
+              <ul>
+                <li>Sea surface temperatures peak after summer heating (≥27°C)</li>
+                <li>Warm water provides maximum heat and moisture energy</li>
+                <li>Wind shear is often lower, allowing storms to organize</li>
+                <li>These conditions are ideal for hurricane formation and intensification</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="practice-question">
+            <strong>Problem 2:</strong> Give two reasons why hurricanes weaken after making landfall.
+            <button class="btn" onclick="toggleAnswer('ans2e')">Show Answer</button>
+            <div class="answer-box" id="ans2e">
+              <strong>Answer (any 2):</strong>
+              <ol>
+                <li><strong>Lose energy source:</strong> No more warm ocean water to provide heat and moisture through evaporation</li>
+                <li><strong>Friction:</strong> Land surface and terrain (mountains, buildings) disrupt the organized circulation</li>
+                <li><strong>Dry air:</strong> Drier air over land mixes into the storm, reducing moisture needed for condensation</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>🎯 Day 3 Summary</h2>
+        <div class="key-concept">
+          <strong>What you mastered today:</strong>
+          <ul>
+            <li>✅ Three global wind belts: Trade Winds, Westerlies, Polar Easterlies</li>
+            <li>✅ U.S. weather moves west → east due to Westerlies</li>
+            <li>✅ Jet streams steer weather systems</li>
+            <li>✅ Coriolis effect curves wind to the right (N. Hemisphere)</li>
+            <li>✅ Air mass types and characteristics</li>
+            <li>✅ Hurricane formation requires warm water (≥27°C), moist air, low wind shear</li>
+            <li>✅ Hurricanes weaken over land/cold water</li>
+          </ul>
+        </div>
+        <div class="tip-box">
+          Focus on understanding WHY things happen, not just memorizing facts. For example, know WHY hurricanes need warm water (it's their energy source)!
+        </div>
+      </div>
+    </div>
+
+    <!-- DAY 4 TAB -->
+    <div id="day4" class="tab-content">
+      <div class="section">
+        <h2>📅 Day 4: Waves & Final Review</h2>
+        <p><strong>Time:</strong> 35-40 minutes | <strong>Standard:</strong> TEKS 8.8A (2 questions) + Practice Test</p>
+
+        <h3>✅ Today's Checklist</h3>
+        <ul class="checklist">
+          <li><input type="checkbox" onchange="updateProgress()"/> Read all Key Concepts for 8.8A</li>
+          <li><input type="checkbox" onchange="updateProgress()"/> Study wave anatomy diagram</li>
+          <li><input type="checkbox" onchange="updateProgress()"/> Study EM spectrum diagram</li>
+          <li><input type="checkbox" onchange="updateProgress()"/> Complete 8.8A practice problems</li>
+          <li><input type="checkbox" onchange="updateProgress()"/> Take the 10-question practice test</li>
+          <li><input type="checkbox" onchange="updateProgress()"/> Review Quick Reference tab</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>🔬 TEKS 8.8A: Waves & Electromagnetic Spectrum</h2>
+        <p style="font-size: 1.05rem;"><strong>What you'll learn:</strong> Wave characteristics and the electromagnetic spectrum</p>
+
+        <h3>🎯 Key Concepts</h3>
+
+        <div class="key-concept">
+          <strong>1. Wave Basics:</strong>
+          <p>A wave is a disturbance that transfers energy from one place to another without transferring matter.</p>
+          <ul>
+            <li><strong>Transverse waves:</strong> Particles move perpendicular (up and down) to wave direction</li>
+            <li><strong>Example:</strong> Light waves, water waves, waves on a rope</li>
+            <li>Matter doesn't travel with the wave - only energy does!</li>
+          </ul>
+        </div>
+
+        <div class="key-concept">
+          <strong>2. Wave Anatomy:</strong>
+          <ul>
+            <li><strong>Crest:</strong> Highest point of a wave</li>
+            <li><strong>Trough:</strong> Lowest point of a wave</li>
+            <li><strong>Wavelength (λ):</strong> Distance from one crest to the next crest (or trough to trough)</li>
+            <li><strong>Amplitude:</strong> Height from rest position to crest (or to trough)</li>
+            <li><strong>Frequency (f):</strong> Number of waves that pass a point in one second (measured in Hertz, Hz)</li>
+          </ul>
+        </div>
+
+        <div class="visual-diagram">
+          <h4>🎨 Visual: Wave Anatomy</h4>
+          <img src="https://cdn.abacus.ai/images/9cd59af2-fbba-4dca-b6f8-268922ef889a.png" alt="Wave Parts"/>
+          <p style="margin-top: 1rem; color: #4a5568;">
+            <strong>Key parts labeled:</strong> Crest (top), Trough (bottom), Wavelength (λ - distance between crests), Amplitude (height from center to crest), Rest position (center line)
+          </p>
+### Rebuilt, researched, TEKS‑aligned 4‑day study guide — organized by tabs (Day 1 → Day 4)
+
+I researched the TEKS and trusted science sources (TEA TEKS Guide and NOAA) and updated the content, explanations, and examples so everything matches typical 8th‑grade expectations and is easy for Makenzie to learn. Below is a self‑contained HTML file (save as makenzie_unit1_tabs.html). It uses tabs (one tab per study day), clear step‑by‑step explanations, worked answers, the images I already generated, and citations to the official TEKS and NOAA resources used for verification.
+
+Key sources used (you can open these to verify alignment and facts):
+- Texas Education Agency — Science TEKS and TEKS Guide: https://tea.texas.gov/academics/curriculum-standards/teks-review/texas-essential-knowledge-and-skills
+- TEKS Guide (TEA resource explaining each student expectation): https://teksguide.org/
+- NOAA — How hurricanes form & sea surface temperature guidance: https://oceanservice.noaa.gov/facts/how-hurricanes-form.html
+- NOAA (Tropical Cyclone FAQ on SST threshold): https://www.aoml.noaa.gov/hrd/tcfaq/A16.html
+- NOAA Climate.gov article re: warm ocean layer and hurricanes: https://www.climate.gov/news-features/featured-images/deep-layer-hurricane-friendly-water-still-present-caribbean-sea
+- Generation Genius (TEKS-aligned K–8 science overview including waves/EM topics): https://www.generationgenius.com/texas-science-standards/
+
+Copy the HTML below into a file and open in a browser.
+        </div>
+
+        <div class="key-concept">
+          <strong>3. Wave Speed Equation:</strong>
+          <p>Speed depends on frequency and wavelength.</p>
+          <div class="formula-box">v = f × λ</div>
+          <ul>
+            <li>v = speed (m/s)</li>
+            <li>f = frequency (Hz)</li>
+            <li>λ = wavelength (meters)</li>
+          </ul>
+          <div class="example-box">
+            <h4>Worked Example</h4>
+            A wave has frequency 5 Hz and wavelength 2 m. What is its speed?<br/>
+            v = f × λ = 5 × 2 = <strong>10 m/s</strong>
+          </div>
+        </div>
+
+        <div class="key-concept">
+          <strong>4. Electromagnetic (EM) Waves:</strong>
+          <ul>
+            <li>Do NOT need a medium (can travel through space)</li>
+            <li>All travel at the speed of light in vacuum: ≈ 3.0 × 10^8 m/s</li>
+            <li>Carry energy as electric and magnetic fields</li>
+          </ul>
+        </div>
+
+        <div class="visual-diagram">
+          <h4>🎨 Visual: Electromagnetic Spectrum</h4>
+          <img src="https://cdn.abacus.ai/images/3f313b4a-5ece-4b0e-bb52-4df60dc0a7b4.png" alt="Electromagnetic Spectrum"/>
+          <p style="margin-top: 1rem; color: #4a5568;">
+            <strong>Order (low → high frequency):</strong> Radio → Microwave → Infrared → Visible → Ultraviolet → X-ray → Gamma ray<br/>
+            <strong>Visible light colors (low → high frequency):</strong> Red, Orange, Yellow, Green, Blue, Indigo, Violet
+          </p>
+        </div>
+
+        <div class="practice-section">
+          <h3>📝 Practice Problems - 8.8A</h3>
+
+          <div class="practice-question">
+            <strong>Problem 1:</strong> A wave has a wavelength of 0.4 m and travels at 8 m/s. What is its frequency?
+            <button class="btn" onclick="toggleAnswer('ans1w')">Show Answer</button>
+            <div class="answer-box" id="ans1w">
+              v = f × λ → f = v ÷ λ = 8 ÷ 0.4 = <strong>20 Hz</strong>
+            </div>
+          </div>
+
+          <div class="practice-question">
+            <strong>Problem 2:</strong> Increasing frequency does what to wavelength if speed stays the same?
+            <button class="btn" onclick="toggleAnswer('ans2w')">Show Answer</button>
+            <div class="answer-box" id="ans2w">
+              <strong>Answer:</strong> Wavelength decreases. (They are inversely related for constant speed.)
+            </div>
+          </div>
+
+          <div class="practice-question">
+            <strong>Problem 3:</strong> Which EM waves have the shortest wavelength and highest energy?
+            <button class="btn" onclick="toggleAnswer('ans3w')">Show Answer</button>
+            <div class="answer-box" id="ans3w">
+              <strong>Answer:</strong> Gamma rays.
+            </div>
+          </div>
+        </div>
+
+        <div class="section">
+          <h2>🧪 Practice Test (10 Questions)</h2>
+          <p>Mix of topics from Days 1–4. Try these without looking, then check answers.</p>
+          <ol>
+            <li>Calculate the net force: 60 N right, 25 N left.</li>
+            <li>A 10 kg cart accelerates at 1.5 m/s². What net force is applied?</li>
+            <li>Which law? A soccer ball keeps rolling until friction slows it.</li>
+            <li>Which pressure system brings clear skies?</li>
+            <li>What front brings steady, light rain over a large area?</li>
+            <li>Which wind belt moves U.S. weather west → east?</li>
+            <li>What ocean condition fuels hurricanes?</li>
+            <li>Wave with f = 4 Hz, λ = 3 m. Find speed.</li>
+            <li>Name the lowest-frequency EM waves.</li>
+            <li>What happens to wavelength when frequency increases (speed constant)?</li>
+          </ol>
+          <button class="btn" onclick="toggleAnswer('ptAnswers')">Show Answers</button>
+          <div class="answer-box" id="ptAnswers">
+            1) 35 N right. 2) F = ma = 10 × 1.5 = 15 N. 3) 1st Law (Inertia). 4) High pressure. 5) Warm front. 6) Westerlies. 7) Warm sea surface (≥27°C), moist air, low shear. 8) v = fλ = 12 m/s. 9) Radio waves. 10) Wavelength decreases.
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>🎯 Day 4 Summary</h2>
+        <div class="key-concept">
+          <strong>What you mastered today:</strong>
+          <ul>
+            <li>✅ Parts of a wave and the speed equation v = fλ</li>
+            <li>✅ EM spectrum order and key properties</li>
+            <li>✅ Solved word problems using wave relationships</li>
+          </ul>
+        </div>
+        <div class="tip-box">
+          Review the Quick Reference tab last—it condenses the most testable ideas onto one page.
+        </div>
+      </div>
+    </div>
+
+    <!-- QUICK REFERENCE TAB -->
+    <div id="formulas" class="tab-content">
+      <div class="section">
+        <h2>📐 Quick Reference (Night-Before Cheat Sheet)</h2>
+        <div class="key-concept">
+          <strong>Newton's Laws:</strong>
+          <ul>
+            <li>1st: Inertia—objects keep doing what they’re doing unless a net force acts.</li>
+            <li>2nd: F = m × a.</li>
+            <li>3rd: Action-Reaction—forces come in equal and opposite pairs on different objects.</li>
+          </ul>
+        </div>
+        <div class="key-concept">
+          <strong>Forces & Units:</strong> Force (N), Mass (kg), Acceleration (m/s²)
+        </div>
+        <div class="key-concept">
+          <strong>Weather Rules:</strong> High = sinking, clear; Low = rising, cloudy/rainy. Warm front = steady rain; Cold front = storms.
+        </div>
+        <div class="key-concept">
+          <strong>Global Patterns:</strong> Westerlies move weather west → east in U.S.; Jet stream steers storms; Coriolis curves right (N. Hemis.).
+        </div>
+        <div class="key-concept">
+          <strong>Hurricanes:</strong> Need warm water ≥27°C, moist air, low shear; weaken over land/cold water.
+        </div>
+        <div class="key-concept">
+          <strong>Waves:</strong> v = fλ; Crest, trough, wavelength, amplitude, frequency. EM order: Radio → Microwave → IR → Visible → UV → X-ray → Gamma.
+        </div>
+      </div>
+    </div>
+
     <script>
       function openTab(evt, tabId) {
         const tabs = document.querySelectorAll('.tab');
