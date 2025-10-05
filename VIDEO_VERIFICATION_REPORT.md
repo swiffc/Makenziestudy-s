@@ -44,13 +44,13 @@
 
 ### Day 3: Global Patterns & Hurricanes
 
-#### Video 5: Crash Course - Global Wind Patterns
-- **Video ID**: `7fd03fBRsuU`
-- **Full URL**: https://www.youtube.com/watch?v=7fd03fBRsuU
-- **Embed URL**: https://www.youtube.com/embed/7fd03fBRsuU
+#### Video 5: Global Wind Patterns & Hurricanes
+- **Video ID**: `oZ6exQoU_CM`
+- **Full URL**: https://www.youtube.com/watch?v=oZ6exQoU_CM
+- **Embed URL**: https://www.youtube.com/embed/oZ6exQoU_CM
 - **Duration**: ~10 minutes
-- **Source**: Crash Course
-- **Status**: ✅ VERIFIED - Valid Crash Course video
+- **Source**: Educational Channel (User-verified)
+- **Status**: ✅ VERIFIED - User-confirmed working video
 
 #### Video 6: SciShow - How Do Hurricanes Form?
 - **Video ID**: `zP4rgvu4xDE`
