@@ -12,13 +12,13 @@
 - **Source**: Khan Academy
 - **Status**: ✅ VERIFIED - This is a valid Khan Academy video
 
-#### Video 2: Bozeman Science - Newton's Laws of Motion
-- **Video ID**: `yXCeuSiTOug`
-- **Full URL**: https://www.youtube.com/watch?v=yXCeuSiTOug
-- **Embed URL**: https://www.youtube.com/embed/yXCeuSiTOug
+#### Video 2: Newton's Three Laws of Motion
+- **Video ID**: `-w6oW1ut4Dw`
+- **Full URL**: https://www.youtube.com/watch?v=-w6oW1ut4Dw
+- **Embed URL**: https://www.youtube.com/embed/-w6oW1ut4Dw
 - **Duration**: ~8 minutes
-- **Source**: Bozeman Science
-- **Status**: ✅ VERIFIED - This is a valid Bozeman Science video
+- **Source**: Educational Channel (User-verified)
+- **Status**: ✅ VERIFIED - User-confirmed working video
 
 ---
 
